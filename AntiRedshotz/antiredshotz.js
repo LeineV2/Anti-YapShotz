@@ -11,9 +11,7 @@ const thread2 = new Thread(() => {
 })
 
 register("chat", () => {
-    if(config.AntiMonkey){
         thread.start()
-    }
 }).setCriteria("RedShotz's party!").setContains()
 
 register("chat", () => {
